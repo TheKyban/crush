@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Sail&family=Ubuntu&family=Zeyada&display=swap');
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: url('images/bg.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.paper {
+    padding: 100px;
+    position: absolute;
+    background: url('images/paper.webp');
+    background-size: 500px;
+    background-position: center center;
+    padding: 20px 100px;
+
+    transform: rotate(-5deg);
+    box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+}
+
+.paper.heart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.paper.heart::after {
+    content: "";
+    background: url("images/heart.webp");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+}
+
+
+
+
+img {
+    max-width: 200px;
+    width: 100%;
+    user-select: none;
+}
+p {
+    font-family: "zeyada";
+    font-size: 50px;
+    color: rgb(0,0,100);
+    opacity: 0.75;
+    user-select: none;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:650px) {
+    .paper {
+        padding: 20px;
+    }
+    img {
+        width: 150px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
