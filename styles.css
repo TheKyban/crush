@@ -18,14 +18,14 @@ body {
     background: url('images/paper.webp');
     background-size: 500px;
     background-position: center center;
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
 
     transform: rotate(-5deg);
     box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
 }
 
 .paper.heart {
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
     padding: 0;
@@ -46,7 +46,10 @@ body {
 }
 
 
-
+.paper.image {
+    width: 250px !important;
+    /* height: 150px !important; */
+}
 
 img {
     max-width: 200px;
